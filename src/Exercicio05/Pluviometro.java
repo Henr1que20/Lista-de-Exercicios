@@ -9,7 +9,6 @@ public class Pluviometro {
         this.setTipo(tipo);
         this.setCapacidade(tipo);
         this.setPeso(tipo);
-
     }
 
     public String getTipo() {
@@ -34,9 +33,9 @@ public class Pluviometro {
 
     public void setCapacidade(int tipo) {
         if(tipo == 1){
-            this.capacidade = 2500;
+            this.capacidade = 3000;
         }else{
-            this.capacidade = 3500;
+            this.capacidade = 4000;
         }
     }
 

@@ -34,20 +34,6 @@ public class ProgramaAgenda {
         for (Pessoa pessoa : pessoas) {
             System.out.println(pessoa.getNome());
         }
-        /*
-        System.out.println("**********************************");
-        System.out.println("\tRemovendo\t");
-        System.out.println("**********************************\n");
-
-        agenda.removePessoa(2);
-
-        agenda.removePessoa(8);
-
-        for (Pessoa pessoa : pessoas) {
-            System.out.println(pessoa);
-        }
-
-         */
 
         boolean busca = agenda.buscarPessoa("Henrique Oliveira");
 

@@ -56,31 +56,7 @@ public class Pessoa {
         this.altura = altura;
     }
 
-    public void calculaIdade(String dateNasc, String pattern) {
-        DateFormat sdf = new SimpleDateFormat(pattern);
-        Date dateNasciInput = null;
 
-        try {
-            dateNasciInput = sdf.parse(dateNasc);
-        } catch (Exception e) {
-        }
-
-        Calendar dataAniversario = new GregorianCalendar();
-
-        dataAniversario.setTime(dateNasciInput);
-
-        Calendar hoje = Calendar.getInstance();
-
-        int idade = hoje.get(Calendar.YEAR) - dataAniversario.get((Calendar.YEAR));
-
-        dataAniversario.add(Calendar.YEAR, idade);
-
-        if (hoje.before(dataAniversario)) {
-            this.idade = idade;
-        }
-
-        this.idade = idade--;
-    }
 
     @Override
     public String toString() {
